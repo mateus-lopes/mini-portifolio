@@ -1,0 +1,24 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    padding-top: 2em;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .gallery-item img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }

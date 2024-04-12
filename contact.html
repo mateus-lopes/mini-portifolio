@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Meu Projeto em HTML, CSS e JavaScript</title>
+    <link rel="stylesheet" href="./src/assets/css/globals.css" />
+    <link rel="stylesheet" href="./main.css">
+    <script src="utils.js"></script>
+</head>
+    <body>
+        <header>
+            <div class="div-logo">
+                <img src="./src/assets/imagens/Group 21.png" height="40px" alt="">
+            </div>
+            <div class="div-navegation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="link current"> Página Inicial </a></li>
+                        <li><a href="#about" class="link"> Sobre </a></li>
+                        <li><a href="contact.html" class="link"> Entre em Contato </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="form-section">
+                <div class="form-content">
+                    <h2>Formulário de Contato</h2>
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="8"></textarea>
+                    
+                        <button type="submit" class="btn-stroke">Enviar</button>
+                      </form>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65050158.32351247!2d-120.48581504779662!3d5.662917943127588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd883cccfd8487%3A0xaf6e573aa1000094!2sAmazon%20Fulfillment%20Center%20MCO1!5e0!3m2!1spt-PT!2sbr!4v1712669173018!5m2!1spt-PT!2sbr" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+        <footer>
+            <section class="main-footer">
+                <div class="logo-footer">
+                    <img src="./src/assets/imagens/Group 21.png" height="40px" alt="">
+                </div>
+                <div class="container">
+                    <div class="footer-navegation">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perspiciatis voluptatum laudantium ipsum officia qui enim. Quisquam, quos. Quisquam, quos.
+                        </p>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html" class="link current"> Página Inicial </a></li>
+                                <li><a href="#about" class="link"> Sobre </a></li>
+                                <li><a href="contact.html" class="link"> Entre em Contato </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="fast-contact">
+                        <p>telefone: (11) 9999-9999</p>
+                        <p>email: teste@email.com</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <script src="./main.js"></script>
+    </body>
+</html>

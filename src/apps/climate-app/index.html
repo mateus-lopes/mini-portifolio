@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate-App</title>
+  </head>
+  <body>
+    <main class="container-main">
+      <header class="header">
+        <span>icon-settings</span>
+      </header>
+      <section class="container-weather">
+        <img src="#" />
+        <h1 class="title">Search Weather</h1>
+        <input type="text" id="latitude-input" placeholder="Latitude: " />
+        <input type="text" id="longitude-input" placeholder="Longitude: " />
+        <button onclick="getLocation()">Add Location</button>
+        <div id="dataContainer"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

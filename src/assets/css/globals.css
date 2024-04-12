@@ -8,3 +8,118 @@ body {
     line-height: 1.5;
     color: #333;
 }
+
+.btn-primary {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: yellowgreen;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: pink;
+    color: #000;
+}
+
+.btn-stroke {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.btn-stroke:hover {
+    background-color: yellowgreen;
+    color: #000;
+}
+
+.btn-stroke2 {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.btn-stroke2:hover {
+    background-color: cornflowerblue;
+    color: #000;
+}
+
+.container {
+    margin: 4em;
+}
+
+.header-app {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+}
+
+.header-app img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.header-app img:hover {
+    opacity: 0.4;
+}
+
+.title-app {
+    display: block;
+    font-size: 4em;
+    color: #000;
+    font-weight: 700;
+    animation: text-shadow-swap 5s infinite ease-in-out;
+    padding-bottom: .4em;
+    margin: 0;
+}
+
+.footer-app {
+    margin: 2em 0;
+    width: 100%;
+    text-align: center;
+}
+
+.return {
+    color: #0000003a;
+    text-decoration: none;
+}
+
+.return:hover {
+    text-decoration: underline;
+}
+
+input {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    min-width: 300px;
+}
