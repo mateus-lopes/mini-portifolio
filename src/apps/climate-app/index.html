@@ -1,24 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Climate-App</title>
-  </head>
-  <body>
-    <main class="container-main">
-      <header class="header">
-        <span>icon-settings</span>
-      </header>
-      <section class="container-weather">
-        <img src="#" />
-        <h1 class="title">Search Weather</h1>
-        <input type="text" id="latitude-input" placeholder="Latitude: " />
-        <input type="text" id="longitude-input" placeholder="Longitude: " />
-        <button onclick="getLocation()">Add Location</button>
-        <div id="dataContainer"></div>
-      </section>
-    </main>
-    <script src="app.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day and Night</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="day">
+  <div id="active">
+    <div class="rain"></div>
+  </div>
+  
+  <div id="sky"></div>
+  <div id="moon"></div>
+  <div id="sun"></div>
+  
+  <div id="cloud1" class="cloud"></div>
+  <div id="cloud2" class="cloud"></div>
+  <div id="cloud3" class="cloud"></div>
+  <div id="cloud4" class="cloud"></div>
+  <div id="cloud5" class="cloud"></div>
+  <div id="cloud6" class="cloud"></div>
+  <div id="cloud7" class="cloud"></div>
+  <div id="cloud8" class="cloud"></div>
+  
+  <button id="rainBtn" class="btn btn-one">Ativat/Desativar Chuva</button>
+  <button id="dayBtn" class="btn btn-one">Ativar/Desativar Noite</button>
+  <button id="toggleBtn" class="btn btn-one">Clique Aqui!</button>
+  
+  <div id="container">
+    <input type="text" id="city" placeholder="Cidade: " />
+    <button id="button" onclick="getLocation()">Buscar</button>
+    <div id="data-container">
+      <div id="location"></div>
+      <div id="precipitation_probability"></div>
+      <div id="convective_precipitation"></div>
+      <div id="time"></div>
+      <div id="weather"></div>
+    </div>
+  </div>
+  
+
+  <div class="author">
+    <a href="../../../index.html#climate">
+      <img src="../../assets/imagens/logo-white.png" alt="">
+    </a>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
 </html>
