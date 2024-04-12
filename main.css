@@ -243,7 +243,7 @@ header {
 
 .apps {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
 
 .app1 {
@@ -267,6 +267,16 @@ header {
 }
 
 .app3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+
+.app4 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -379,7 +389,7 @@ footer nav li {
 
 
 .contact-content {
-    margin-top: 200vh;
+    margin-top: calc(3*70vh);
 }
 
 /* form */
