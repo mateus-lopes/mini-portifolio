@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="day">
+  <div id="active">
+    <div class="rain"></div>
+  </div>
+  
   <div id="sky"></div>
   <div id="moon"></div>
   <div id="sun"></div>
-
+  
   <div id="cloud1" class="cloud"></div>
   <div id="cloud2" class="cloud"></div>
   <div id="cloud3" class="cloud"></div>
@@ -18,8 +22,24 @@
   <div id="cloud5" class="cloud"></div>
   <div id="cloud6" class="cloud"></div>
   <div id="cloud7" class="cloud"></div>
-
-  <button id="toggleBtn">Change to Night</button>
+  <div id="cloud8" class="cloud"></div>
+  
+  <button id="rainBtn" class="btn btn-one">Ativat/Desativar Chuva</button>
+  <button id="dayBtn" class="btn btn-one">Ativar/Desativar Noite</button>
+  <button id="toggleBtn" class="btn btn-one">Clique Aqui!</button>
+  
+  <div id="container">
+    <input type="text" id="city" placeholder="Cidade: " />
+    <button id="button" onclick="getLocation()">Buscar</button>
+    <div id="data-container">
+      <div id="location"></div>
+      <div id="precipitation_probability"></div>
+      <div id="convective_precipitation"></div>
+      <div id="time"></div>
+      <div id="weather"></div>
+    </div>
+  </div>
+  
   
   <script src="script.js"></script>
 </body>
