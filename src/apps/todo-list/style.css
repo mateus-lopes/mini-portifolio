@@ -1,0 +1,23 @@
+.completed {
+  text-decoration: line-through;
+}
+
+#no-tasks {
+  color: #777;
+}
+
+li {
+  margin: 1em 0;
+}
+
+.delete {
+  cursor: pointer;
+  padding-left: 1em;
+  color: red;
+  font-size: 12px;  
+  opacity: 0;
+}
+
+li:hover .delete {
+  opacity: 1;
+}

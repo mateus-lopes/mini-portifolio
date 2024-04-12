@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de Tarefas | Mini Portifólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/globals.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../../../utils.js"></script>
+</head>
+
+<body>
+    <header class="header-app">
+        <img
+            src="../../assets/imagens/icons/Settings.png"
+            alt="icone de configuração"
+        />
+    </header>
+    <section class="container">
+        <a class="return" href="../../../index.html">
+            Mini Portifolio /
+        </a>
+        <h2 class="title-app">
+            Lista de Tarefas
+        </h2>
+
+        <input type="text" id="task-input" placeholder="Add task" />
+        <button onclick="addTask()" class="btn-primary">Add Task</button>
+        <ul id="todo-list">
+            <li id="no-tasks" style="display: block">Você ainda não cadastrou nenhuma tarefa :(</li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
