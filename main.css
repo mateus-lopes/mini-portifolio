@@ -1,5 +1,380 @@
 body {
-    margin: 5em;
-    border: 9px solid blue;
-    outline: 9px solid blue;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    position: relative;
+}
+
+/* header */
+
+header {
+    width: 75%;
+    height: 100px;
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.div-navegation {
+    width: 100%;
+}
+
+.div-navegation nav ul {
+    list-style: none;
+    margin: 1em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.div-navegation nav ul a {
+    margin: 0 .8em;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.link:hover::after {
+    background-color: pink;
+    animation: border 2s infinite;
+}
+
+.current {
+    color: cornflowerblue !important;
+}
+
+@keyframes border {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* highlight 1 */
+
+.highlight {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    height: 70vh;
+}
+
+.highlight-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.highlight-content h1 {
+    font-size: 4em;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+}
+
+.highlight-content p {
+    position: relative;
+    font-size: .9em;
+    color: #555;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.underline {
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.t1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+    border-radius: 45px;
+    color: #fff;
+    overflow: hidden;
+    top: 0em;
+    right: -1em;
+    animation: move 3s infinite;
+}
+
+.t2 {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: indigo;
+    color: #fff;
+    overflow: hidden;
+    top: 0em;
+    left: -1em;
+    animation: move 2.5s infinite;
+}
+
+.t1 p {
+    font-size: small;
+    color: #fff;
+    animation: slide 4s infinite;
+}
+
+.t2 p {
+    font-size: small;
+    color: #fff;
+    animation: slide 3s infinite;
+}
+
+.social-medias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-medias ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-medias ul li {
+    margin: 0 .5em;
+    border: 1px solid #0000002a;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.social-medias ul li:hover {
+    transform: translateY(-12px);
+}
+
+.social-medias ul li a {
+    text-decoration: none;
+}
+
+.icon {
+    display: flex;
+    height: 24px;
+    width: 24px;
+}
+
+/* about */
+
+.about {
+    width: 75%;
+    margin: 16em auto;
+    display: flex;
+}
+
+.about h2 {
+    font-size: 2em;
+}
+
+.about p {
+    max-width: 80%;
+    color: #555;
+}
+
+.btn-stroke {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.btn-stroke:hover {
+    background-color: yellowgreen;
+    color: #000;
+}
+
+/* apps */
+
+.apps {
+    width: 100%;
+    height: 100vh;
+}
+
+.app1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.app2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+
+/* contact */
+
+.contact-content {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.contact-content h3 {
+    font-size: 1em;
+    color: gray;
+    font-weight: 300;
+}
+
+.contact-content h2{
+    display: block;
+    font-size: 4em;
+    color: #000;
+    font-weight: 700;
+    animation: text-shadow-swap 5s infinite ease-in-out;
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+.contact-content h2:hover {
+    animation-play-state: paused;
+}
+
+@keyframes text-shadow-swap {
+    0% {
+        transform: translateX(-25px);
+        text-shadow: 80px 50px 0 #0000005a;
+    }
+    50% {
+        transform: translateX(50px);
+        text-shadow: -80px 50px 0 #0000005a;
+    }
+    100% {
+        transform: translateX(-25px);
+        text-shadow: 80px 50px 0 #0000005a;
+    }
+}
+  
+
+
+/* footer */
+
+footer {
+    margin-top: 100vh;
+    margin-bottom: 2em;
+}
+
+.main-footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    border-top: 1px solid #0000001a;
+}
+
+.footer-navegation {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: between;
+    padding-top: 2em;
+}
+
+.footer-navegation p {
+    max-width: 40%;
+    margin: 0 auto 0 0;
+}
+
+.logo-footer {
+    width: 75%;
+    padding-bottom: 2em;
+    margin: 0 auto;
+}
+
+.fast-contact {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: start;
+    gap: 1em;
+}
+
+footer nav li {
+    list-style: none;
+    margin: 1em 0;
 }
